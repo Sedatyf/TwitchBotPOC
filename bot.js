@@ -38,6 +38,12 @@ function onMessageHandler(target, context, msg, self) {
         const num = rollDice();
         client.say(target, `You rolled a ${num}`);
         console.log(`* Executed ${commandName} command`);
+    }
+    if (commandName.includes('Bonjour')) {
+        console.log('Salut mec!');
+    }
+    if (commandName.includes('HeyGuys')) {
+        console.log('heyGuys');
     } else {
         console.log(`* Unknown command ${commandName}`);
     }
